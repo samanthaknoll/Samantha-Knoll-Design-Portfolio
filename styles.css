@@ -345,11 +345,6 @@ gap: 1rem;
   width: 60px;
 }
 
-.homepage-about-me--container {
-  margin: 10px auto;
-  padding: 2rem;
-  border-radius: 12px;
-}
 
 .homepage-about-me--text h3 {
       position: relative;
@@ -392,6 +387,9 @@ gap: 1rem;
     padding-left: 40px; /* Adds more space for the custom icon and blue circle */
     position: relative; /* Needed to position the pseudo-element */
     line-height: 2.7rem;
+     display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .about-me-list li::before {
@@ -414,7 +412,7 @@ gap: 1rem;
   justify-content: space-evenly;
   padding: 2rem;
   box-shadow: var(--modern-box-shadow);
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   background-color: var(--color-025);
 }
 
@@ -463,7 +461,7 @@ width: 100%;
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   align-items: center;
 }
 
@@ -491,6 +489,13 @@ width: 100%;
 
 .homepage-about-me--image img {
   width: 100%;
+}
+
+.about-me-list li {
+    padding-left: 40px; /* Adds more space for the custom icon and blue circle */
+    position: relative; /* Needed to position the pseudo-element */
+    line-height: 1.3rem;
+    margin-bottom: 18px;
 }
 }
 
@@ -530,7 +535,7 @@ footer * {
 }
 
 .services--large-container {
-  margin-bottom: 120px;
+  margin-bottom: 2rem;
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap;
@@ -542,10 +547,9 @@ footer * {
   display: flex; 
   flex-direction: column; 
   gap: .5rem;
-  border: 1px solid var(--color-025);
+  border: 2px solid var(--color-light-pink);
   border-radius: 12px;
   padding: 2.5rem 1.5rem;
-  box-shadow: var(--modern-box-shadow);
   width: 400px;
   transition: all 250ms ease-in-out;
 }
@@ -560,12 +564,12 @@ footer * {
 }
 
 .services--container-1 h5 {
-  height: 35px;
+  height: 40px;
   text-align: center;
 }
 
 .services--container-2 h5 {
-  height: 35px;
+  height: 40px;
   text-align: center;
 }
 
@@ -573,20 +577,11 @@ footer * {
   display: flex; 
   flex-direction: column; 
   gap: .5rem;
-  background: var(--color-025);
+  background: var(--color-light-pink);
   border-radius: 12px;
   padding: 2.5rem 1.5rem;
-  box-shadow: var(--modern-box-shadow);
   width: 400px;
   transition: all 250ms ease-in-out;
-}
-
-.services--container-2:hover {
-  transform: scale(1.05); 
-}
-
-.services--container-1:hover {
-  transform: scale(1.05);
 }
 
 .what-i-offer-page-container {
@@ -597,7 +592,7 @@ footer * {
 
 .what-i-offer{ 
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   margin-top: 3rem;
   text-align: center;
 }
@@ -847,7 +842,7 @@ TESTIMONIALS
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  height: 150px;
+  min-height: 150px;
 } 
 
 .testimonial-line {
@@ -883,17 +878,17 @@ TESTIMONIALS
 @media (max-width: 869px) {
 .testimonial-container {
   gap: 1rem;
-  height: 275px;
+  height: 300px;
 } 
 
 .testimonial-line {
     width: 12px; /* Sets the thickness of the line */
-    height: 70%; /* Sets the height of the line */
+    height: 90%; /* Sets the height of the line */
 }
 
 .testimonial_box p {
-  font-size: 18px;
-  line-height: 1.5rem;
+  font-size: 14px;
+  line-height: 1.4rem;
 }
 
 .testimonial-image-with-text--container {
@@ -902,7 +897,11 @@ TESTIMONIALS
 }
 
 .testimonial-photo img {
-  max-width: 60px;
+  max-width: 40px;
+}
+
+.testimonial-name-and-company {
+  font-size: 12px;
 }
 
 }
@@ -1059,9 +1058,9 @@ TESTIMONIALS
 .higlighter-background--work-samples {
   margin: 0 auto;
    position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
     max-width: 300px;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
   .higlighter-background--work-samples::before {
@@ -1219,9 +1218,9 @@ TESTIMONIALS
 
  @media(max-width: 769px) { 
  .msa-slide-container {
-       max-width: 90%; 
-       margin: 3rem auto;
-       padding: 20px 60px;
+       max-width: 100%; 
+       min-height: 250px;
+       padding: 50px;
      }
 }
 
