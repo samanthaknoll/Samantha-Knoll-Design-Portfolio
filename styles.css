@@ -231,11 +231,10 @@ h1, h2, h3, h4 {
   background-color: var(--color-050);
   color: var(--color-000);
   background-image: 
-  linear-gradient(
-            rgba(30, 29, 28, .66),
-            rgba(30, 29, 28, .66)
-        ),
-        url(https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/9gp3ybkpz563-arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg);
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.56)), /* Adding a semi-transparent black gradient */
+    url('https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/9gp3ybkpz563-arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg');
+  background-size: cover;
+
   background-size: cover;
   background-position: 50% 65%;
   background-repeat: no-repeat;
@@ -248,6 +247,9 @@ h1, h2, h3, h4 {
   padding: 2rem;
   min-height: 450px;
 }
+
+  
+   
 
 .homepage-name--container h1 {
   font-size: 6rem;
@@ -278,15 +280,15 @@ h1, h2, h3, h4 {
   background: var(--color-secondary);
   color: black;
   border: none;
-  border-radius: 12px;
-  padding: 15px 30px;
+  border-radius: 150px;
+  padding: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
   box-shadow: var(--modern-box-shadow);
   transition: all 0.3s ease-in-out;
   margin-top: 2rem;
-  width: 180px;
+  width: 160px;
 }
 
 .homepage-contact-me--button:hover {
@@ -496,6 +498,10 @@ width: 100%;
     position: relative; /* Needed to position the pseudo-element */
     line-height: 1.3rem;
     margin-bottom: 18px;
+}
+
+.homepage-contact-me--button {
+  margin-top: 1rem;
 }
 }
 
@@ -846,18 +852,15 @@ TESTIMONIALS
 } 
 
 .testimonial-line {
-    width: 18px; /* Sets the thickness of the line */
-    height: 100%; /* Sets the height of the line */
+    width: 14px; /* Sets the thickness of the line */
+    height: 150px; /* Sets the height of the line */
     border-radius: 100px;
     background-color: var(--color-secondary); /* Sets the color of the line */
 }
 
-
-
 .testimonial_box p {
   font-size: 20px;
   line-height: 2rem;
-  text-align: ;
 }
 
 .testimonial-image-with-text--container {
@@ -874,16 +877,20 @@ TESTIMONIALS
   border: 1px solid var(--color-000);
 }
 
+/************** 
+TESTIMONIALS MOBILE
+****************/
+
 
 @media (max-width: 869px) {
 .testimonial-container {
   gap: 1rem;
-  height: 300px;
+  height: unset;
 } 
 
 .testimonial-line {
-    width: 12px; /* Sets the thickness of the line */
-    height: 90%; /* Sets the height of the line */
+    width: 14px; /* Sets the thickness of the line */
+    height: 150px; /* Sets the height of the line */
 }
 
 .testimonial_box p {
@@ -903,7 +910,6 @@ TESTIMONIALS
 .testimonial-name-and-company {
   font-size: 12px;
 }
-
 }
 
 .video-container {
@@ -1145,16 +1151,23 @@ TESTIMONIALS
        flex-direction: column; 
        background: var(--color-000);
        border-radius: 12px;
-       max-width: 90%; 
        margin: 3rem auto;
-       padding: 80px 125px;
+       padding: 70px 70px;
        transition: transform 0.5s ease-in-out;
        display: none; 
      }
+     
      .active-slide {
        display: block; /* Show active slide */
      }
+
+     @media (max-width: 850px) {
+.msa-slide-container {
+  padding: 25px 50px;
+     }
+}
      
+    
      .msa-slide-arrow-left, .msa-slide-arrow-right {
         position: relative;
         width: 35px;
@@ -1216,13 +1229,7 @@ TESTIMONIALS
     background-color: var(--color-500); /* Active color */
 }
 
- @media(max-width: 769px) { 
- .msa-slide-container {
-       max-width: 100%; 
-       min-height: 250px;
-       padding: 50px;
-     }
-}
+ 
 
 
 
