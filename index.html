@@ -67,9 +67,10 @@
     <h1>Samantha Knoll</h1>
       <h2>Learning Experience Designer & eLearning Developer</h2>
       <div class="homepage-buttons"> 
-        <a href="mailto:hello@samanthaknolldesign.com" class="homepage-contact-me--button">Hire Me</a>
-        <button class="homepage-contact-me--button">Download CV</button>
-      </div>
+    <a href="mailto:hello@samanthaknolldesign.com?subject=Inquiry%20from%20Portfolio%20Website&body=Hi%20Sam,%0D%0A%0D%0AI%20am%20interested%20in%20discussing%20a%20potential%20project%20with%20you.%0D%0A%0D%0APlease%20let%20me%20know%20a%20convenient%20time%20to%20talk.%0D%0A%0D%0AThank%20you!%0D%0A[Your%20Name]" class="homepage-contact-me--button">Hire Me</a>
+    <button class="homepage-contact-me--button">Download CV</button>
+</div>
+
   </div>
 
 <div class="page-container"> 
@@ -148,17 +149,21 @@
       <h3 id="worksamples">Work Samples</h3>
     </div>
     <div class="id-process-examples-1-2-container">
-    <div class="id-process-examples-1">
+       <div class="id-process-examples-1">
       <div class="id-process-text-1"> 
-          <h3>Infographics</h3>
+        <h3>Courses</h3>
           <hr>
-          <p><strong>Title:</strong> Realm Accounting Essentials: Navigating the System</p>
-          <p><strong>Responsibilities:</strong> Collaborated with an Accounting Subject Matter Expert (SME) to gather key information for the learner. Subsequently, conceptualized, outlined, designed mockups, and created infographics using Canva.</p>
-          <p><strong>Tools:</strong> Canva</p>
-        <button class="see-more--button">Launch Project</button>
+          <p><strong>Title:</strong> Go for Mission Trips: Create an Application</p>
+          <p><strong>Responsibilities:</strong> In collaboration with a product SME, I scripted, designed, and developed an interactive eLearning course on Mission Trips, focusing on an engaging web layout and aligning content to meet specific, measurable, and behavior-oriented learning objectives. My efforts led to enhanced learner engagement and higher course completion rates, showcasing my skills in eLearning development and design.</p>
+          <p><strong>Tools:</strong> HTML, CSS,Javascript, Visual Code Studio, LMS, Vimeo, iorad, H5P </p>
+          <a href="https://academy.ministrysmart.com/courses/go-for-mission-trips-create-an-application" target="_blank"> 
+            <button class="see-more--button">Launch Project</button>
+          </a>
       </div>
       <div class="id-process-image-1"> 
-        <div><img src="https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/wkujs3q739d8-RealmAccountingEssentialsNavigatingtheSystemReferenceSheet15.png"></div>
+        <div class="id-process-image-1"> 
+        <div><img src="https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/tjmng9rooqng-Screenshot2024-02-21at7.40.51PM.png"></div>
+      </div>
       </div>
     </div>
     <div class="id-process-examples-2">
@@ -181,24 +186,19 @@
     </div>
     <div class="id-process-examples-1">
       <div class="id-process-text-1"> 
-        <h3>Courses</h3>
+          <h3>Infographics</h3>
           <hr>
-          <p><strong>Title:</strong> Go for Mission Trips: Create an Application</p>
-          <p><strong>Responsibilities:</strong> In collaboration with a product SME, I scripted, designed, and developed an interactive eLearning course on Mission Trips, focusing on an engaging web layout and aligning content to meet specific, measurable, and behavior-oriented learning objectives. My efforts led to enhanced learner engagement and higher course completion rates, showcasing my skills in eLearning development and design.</p>
-          <p><strong>Tools:</strong> HTML, CSS,Javascript, Visual Code Studio, LMS, Vimeo, iorad, H5P </p>
-          <a href="https://academy.ministrysmart.com/courses/go-for-mission-trips-create-an-application" target="_blank"> 
-            <button class="see-more--button">Launch Project</button>
-          </a>
+          <p><strong>Title:</strong> Realm Accounting Essentials: Navigating the System</p>
+          <p><strong>Responsibilities:</strong> Collaborated with an Accounting Subject Matter Expert (SME) to gather key information for the learner. Subsequently, conceptualized, outlined, designed mockups, and created infographics using Canva.</p>
+          <p><strong>Tools:</strong> Canva</p>
+        <button class="see-more--button">Launch Project</button>
       </div>
       <div class="id-process-image-1"> 
-        <div class="id-process-image-1"> 
-        <div><img src="https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/tjmng9rooqng-Screenshot2024-02-21at7.40.51PM.png"></div>
-      </div>
+        <div><img src="https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/wkujs3q739d8-RealmAccountingEssentialsNavigatingtheSystemReferenceSheet15.png"></div>
       </div>
     </div>
-    
   </div>
-  </div>
+</div>
   <!--TESTIMONIALS-->
   <div class="higlighter-background--testimonials">     
       <h3 id="testimonials">Testimonials</h3>
@@ -368,7 +368,7 @@ I appreciate her attention to detail and quick-witted thinking that really helps
                           </div> 
                               <div class="pledge-donations-container--text">  
                     <h4>Evaluation</h4>
-                    <p>The final stage of course development includes a comprehensive review to analyze customer-centric metrics such as learner satisfaction, enrollment, completion, and engagement. This stage aims to measure the effectiveness and quality of the learning experience, as well asw to identify areas of continuous improvement.</p>  
+                    <p>The final stage of course development includes a comprehensive review to analyze customer-centric metrics such as learner satisfaction, enrollment, completion, and engagement. This stage aims to measure the effectiveness and quality of the learning experience, as well as to identify areas of continuous improvement.</p>  
                   </div>
                       </div>             
                 </div>
@@ -492,6 +492,37 @@ I appreciate her attention to detail and quick-witted thinking that really helps
     document.addEventListener('DOMContentLoaded', (event) => {
         showSlide(currentSlide);
     });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    let target = document.querySelector(this.getAttribute('href'));
+    let headerOffset = 100;  // Height of your header
+    let elementPosition = target.getBoundingClientRect().top;
+    let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all links within the navbar
+    document.querySelectorAll('.navbar .nav-link').forEach(function(navLink) {
+        navLink.addEventListener('click', function() {
+            // Check if the navbar-toggler is visible (i.e., in mobile view)
+            let navbarToggler = document.querySelector('.navbar-toggler');
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                // If the toggler is visible, simulate a click on it to close the navbar
+                navbarToggler.click();
+            }
+        });
+    });
+});
+
 </script>
 
 
