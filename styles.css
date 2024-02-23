@@ -443,14 +443,14 @@ gap: 1rem;
 @media (max-width: 1000px) {
   .homepage-about-me--text-and-image {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: .5rem;
   align-items: center;
 }
 
 .homepage-about-me--image img {
-  width: 400px;
-  border-radius: 12px;
+  width: 350px;
+  border-radius: 50%;
 }
 
 .skill--container {
@@ -464,6 +464,7 @@ width: 100%;
   padding: 1rem;
   align-items: center;
   margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .homepage-about-me--text h3 {
