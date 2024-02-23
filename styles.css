@@ -231,7 +231,7 @@ h1, h2, h3, h4 {
   background-color: var(--color-050);
   color: var(--color-000);
   background-image: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.56)), /* Adding a semi-transparent black gradient */
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Adding a semi-transparent black gradient */
     url('https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/9gp3ybkpz563-arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg');
   background-size: cover;
 
@@ -355,11 +355,11 @@ gap: 1rem;
 
  .homepage-about-me--text h3::before {
       /* Highlight color */
-      background-color: var(--color-050);
+      background-color: var(--color-light-pink);
       content: "";
       position: absolute;
       width: 140px;
-      height: 60%;
+      height: 90%;
       left: -2px;
       bottom: 0;
       z-index: -1;
@@ -377,7 +377,7 @@ gap: 1rem;
 
 .homepage-about-me--image img {
   width: 500px;
-  border-radius: 12%;
+  border-radius: 12px;
 }
 
 .about-me-list {
@@ -440,17 +440,17 @@ gap: 1rem;
   background-color: black;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1000px) {
   .homepage-about-me--text-and-image {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  flex-direction: column-reverse;
+  gap: .5rem;
   align-items: center;
 }
 
 .homepage-about-me--image img {
-  width: 500px;
-  border-radius: 12%;
+  width: 400px;
+  border-radius: 12px;
 }
 
 .skill--container {
@@ -463,9 +463,25 @@ width: 100%;
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  margin-bottom: 3rem;
   align-items: center;
+  max-width: 60%;
+  margin: 0 auto;
 }
+
+.homepage-about-me--text h3 {
+      margin: 0 auto;
+      width: 150px;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+  }
+
+ .homepage-about-me--text h3::before {
+      width: 150px;
+      height: 90%;
+      left: -10%;
+      bottom: 0;
+
+  }
 
 .about-me-stats--container {
   display: flex; 
@@ -487,10 +503,6 @@ width: 100%;
 
 .about-me-stats--text p {
   text-align: center;
-}
-
-.homepage-about-me--image img {
-  width: 100%;
 }
 
 .about-me-list li {
@@ -599,18 +611,18 @@ footer * {
 .what-i-offer{ 
   position: relative;
   margin-bottom: 2.5rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
   text-align: center;
 }
 
 .what-i-offer::before { 
   /* Highlight color */
-      background-color: var(--color-050);
+      background-color: var(--color-light-pink);
       content: "";
       position: absolute;
       width: 170px;
-      height: 60%;
-      left: -2px;
+      height: 90%;
+      left: -7px;
       bottom: 0;
       z-index: -1;
       transform: rotate(-2deg);
@@ -621,7 +633,7 @@ footer * {
     display: flex; 
     flex-direction: row; 
     gap: 3rem;
-    background: rgba(231, 189, 176, .3);
+    border: 1px solid var(--color-secondary);
     padding: 2rem;
     border-radius: 12px;
   }
@@ -630,7 +642,7 @@ footer * {
     display: flex; 
     flex-direction: row-reverse; 
     gap: 3rem;
-    background: rgba(231, 189, 176, .3);
+    border: 1px solid var(--color-secondary);
     padding: 2rem;
     border-radius: 12px;
   }
@@ -646,11 +658,13 @@ footer * {
     flex: 1;
     margin: 0 auto;
     max-width: 500px;
+    text-align: center;
   }
 
   .id-process-image-1 img {
     border-radius: 12px;
     width: 100%;
+    border: 1px solid grey;
     
   }
 
@@ -708,7 +722,7 @@ footer * {
   }
 
   .id-process-image-1 img {
-    max-width: 100%;
+    max-width: 80%;
   }
 
   .see-more--button {
@@ -728,8 +742,8 @@ footer * {
   .see-more--button {
   text-align: center;
   text-decoration: none;
-  background:white;
-  color: black;
+  background:var(--color-500);
+  color: white;
   border: none;
   border-radius: 100px;
   padding: 12px 24px;
@@ -755,7 +769,7 @@ footer * {
     gap: 3rem;
     max-width: 90%;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 
   @media (max-width: 869px) {
@@ -851,13 +865,6 @@ TESTIMONIALS
   min-height: 150px;
 } 
 
-.testimonial-line {
-    width: 14px; /* Sets the thickness of the line */
-    height: 150px; /* Sets the height of the line */
-    border-radius: 100px;
-    background-color: var(--color-secondary); /* Sets the color of the line */
-}
-
 .testimonial_box p {
   font-size: 20px;
   line-height: 2rem;
@@ -883,7 +890,17 @@ TESTIMONIALS MOBILE
 
 
 @media (max-width: 869px) {
-.testimonial-container {
+.testimonial-image-with-text--container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+  .testimonial-container {
   gap: 1rem;
   height: unset;
 } 
@@ -894,13 +911,9 @@ TESTIMONIALS MOBILE
 }
 
 .testimonial_box p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4rem;
-}
-
-.testimonial-image-with-text--container {
-  gap:1.5rem;
-  margin-top: 1rem;
+  text-align: center;
 }
 
 .testimonial-photo img {
@@ -920,7 +933,6 @@ TESTIMONIALS MOBILE
   position: relative;
   border-radius: 15px; /* Adjust this value to your preference */
   overflow: hidden; /* Ensures the corners are rounded */
-  
 }
 
 .certifications--container {
@@ -1067,15 +1079,16 @@ TESTIMONIALS MOBILE
     margin-bottom: .5rem;
     max-width: 300px;
     margin-top: 3rem;
+    text-align: center;
 }
 
   .higlighter-background--work-samples::before {
-      background-color: var(--color-050);
+      background-color: var(--color-light-pink);
       content: "";
       position: absolute;
       width:230px;
-      height: 60%;
-      left: -6%;
+      height: 90%;
+      left: 13%;
       bottom: 0;
       z-index: -1;
       transform: rotate(-2deg);
@@ -1088,22 +1101,23 @@ TESTIMONIALS MOBILE
   }
 
   .higlighter-background--testimonials {
-  margin: 6rem auto;
+  margin: 3rem auto;
   position: relative;
   margin-bottom: 1.5rem;
   max-width: 300px;
+  text-align: center;
 }
 
   .higlighter-background--testimonials::before {
-      background-color: var(--color-050);
+      background-color: var(--color-light-pink);
       content: "";
       position: absolute;
-      width:230px;
-      height: 60%;
-      left: -6%;
+      width:200px;
+      height: 90%;
+      left: 17%;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-2deg);
+      transform: rotate(-1deg);
   }
 
   .higlighter-background--ID-Process {
@@ -1163,7 +1177,7 @@ TESTIMONIALS MOBILE
 
      @media (max-width: 850px) {
 .msa-slide-container {
-  padding: 25px 50px;
+  padding: 40px 40px 70px 40px;
      }
 }
      
