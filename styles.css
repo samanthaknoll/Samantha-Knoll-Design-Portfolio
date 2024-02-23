@@ -168,9 +168,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding-top: 125px;
+  padding-top: 90px;
   line-height: 22px;
-  scroll-padding-top: -800px;
 }
 
 h1, h2, h3, h4 {
@@ -322,6 +321,14 @@ h1, h2, h3, h4 {
       transform: rotate(-1deg);
   }
 
+  @media (max-width: 1000px) {
+.homepage-skills--container h3::before { 
+      width: 70px;
+      height: 90%;
+      left: -6px;
+  }
+}
+
 .skill--multiple-container {
 display: flex; 
 justify-content: center;
@@ -458,7 +465,7 @@ gap: .6rem;
 
 .skill--container {
     height: 140px;
-    width: 1px;
+    width: 150px;
 }
 
 .about-me-stats--large-container {
@@ -479,9 +486,9 @@ gap: .6rem;
   }
 
  .homepage-about-me--text h3::before {
-      width: 150px;
+      width: 120px;
       height: 90%;
-      left: -10%;
+      left: -3%;
       bottom: 0;
 
   }
@@ -646,6 +653,13 @@ a:hover {
       transform: rotate(-1deg);
       text-align: center;
   }
+
+  @media (max-width: 1000px) {
+.what-i-offer::before {
+      width: 150px;
+      left: -6px;
+  }
+}
  
   .id-process-examples-1 {
     display: flex; 
@@ -1113,6 +1127,15 @@ TESTIMONIALS MOBILE
       transform: rotate(-1deg);
   }
 
+  @media (max-width: 1000px) {
+ .higlighter-background--work-samples::before {
+      width:180px;
+      height: 90%;
+      left: 20%;
+
+  }
+}
+
   hr {
     width: 100px;
     height: 4px;
@@ -1139,6 +1162,14 @@ TESTIMONIALS MOBILE
       z-index: -1;
       transform: rotate(-1deg);
   }
+
+  @media (max-width: 1000px) {
+.higlighter-background--testimonials::before {
+      width:160px;
+      height: 90%;
+      left: 23%;
+  }
+}
 
   .higlighter-background--ID-Process {
   margin: 0 auto;
@@ -1263,6 +1294,11 @@ TESTIMONIALS MOBILE
 .msa-dot.active {
     background-color: var(--color-500); /* Active color */
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 
  
 
