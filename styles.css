@@ -170,6 +170,7 @@ body {
   font-style: normal;
   padding-top: 125px;
   line-height: 22px;
+  scroll-padding-top: -800px;
 }
 
 h1, h2, h3, h4 {
@@ -214,7 +215,7 @@ h1, h2, h3, h4 {
 }
 
 .navbar-brand img {
-  width: 200px;
+  width: 100px;
 }
 
 .navbar-nav .nav-link.show {
@@ -234,8 +235,6 @@ h1, h2, h3, h4 {
     linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Adding a semi-transparent black gradient */
     url('https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/9gp3ybkpz563-arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg');
   background-size: cover;
-
-  background-size: cover;
   background-position: 50% 65%;
   background-repeat: no-repeat;
   display: flex; 
@@ -243,9 +242,9 @@ h1, h2, h3, h4 {
   justify-content: center; 
   align-items: center;
   gap: 1rem;
-  margin: 4rem 0;
+  margin: 0rem;
   padding: 2rem;
-  min-height: 450px;
+  min-height: 425px;
 }
 
   
@@ -300,25 +299,27 @@ h1, h2, h3, h4 {
   flex-direction: column; 
   justify-content: center;
   align-items: center;
-  margin: 8rem 40px;
+  margin: 0 auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .homepage-skills--container h3{ 
   position: relative;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .homepage-skills--container h3::before { 
   /* Highlight color */
-      background-color: var(--color-050);
+      background-color: var(--color-light-pink);
       content: "";
       position: absolute;
-      width: 90px;
+      width: 80px;
       height: 90%;
-      left: -8px;
+      left: -5px;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-2deg);
+      transform: rotate(-1deg);
   }
 
 .skill--multiple-container {
@@ -326,7 +327,7 @@ display: flex;
 justify-content: center;
 flex-direction: row;
 flex-wrap: wrap;
-gap: 1rem;
+gap: .6rem;
 }
 
 .skill--container {
@@ -364,7 +365,7 @@ gap: 1rem;
       left: -2px;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-2deg);
+      transform: rotate(-1deg);
   }
 
 
@@ -373,11 +374,12 @@ gap: 1rem;
   flex-direction: row;
   gap: 2rem;
   align-items: center;
+  margin-top: 3rem;
 }
 
 
 .homepage-about-me--image img {
-  width: 500px;
+  width: 400px;
   border-radius: 12px;
 }
 
@@ -456,6 +458,7 @@ gap: 1rem;
 
 .skill--container {
     height: 140px;
+    width: 1px;
 }
 
 .about-me-stats--large-container {
@@ -579,10 +582,10 @@ a:hover {
   display: flex; 
   flex-direction: column; 
   gap: .5rem;
-  border: 2px solid var(--color-light-pink);
+  border: 4px solid var(--color-light-pink);
   border-radius: 12px;
-  padding: 2.5rem 1.5rem;
-  width: 400px;
+  padding: 2rem 1rem;
+  width: 380px;
   transition: all 250ms ease-in-out;
   
 }
@@ -612,8 +615,8 @@ a:hover {
   gap: .5rem;
   background: var(--color-light-pink);
   border-radius: 12px;
-  padding: 2.5rem 1.5rem;
-  width: 400px;
+  padding: 2rem 1rem;
+  width: 380px;
   transition: all 250ms ease-in-out;
 }
 
@@ -625,7 +628,7 @@ a:hover {
 
 .what-i-offer{ 
   position: relative;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   margin-top: 6rem;
   text-align: center;
 }
@@ -637,10 +640,10 @@ a:hover {
       position: absolute;
       width: 170px;
       height: 90%;
-      left: -7px;
+      left: 0px;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-2deg);
+      transform: rotate(-1deg);
       text-align: center;
   }
  
@@ -651,6 +654,7 @@ a:hover {
     border: 1px solid var(--color-secondary);
     padding: 2rem;
     border-radius: 12px;
+    align-items: center;
   }
 
    .id-process-examples-2 {
@@ -660,6 +664,7 @@ a:hover {
     border: 1px solid var(--color-secondary);
     padding: 2rem;
     border-radius: 12px;
+    align-items: center;
   }
 
 
@@ -680,24 +685,19 @@ a:hover {
     border-radius: 12px;
     width: 100%;
     border: 1px solid grey;
-    
   }
 
   .id-process-text-1 h3 {
     text-align: left;
-    
   }
 
   .id-process-text-1 p {
     text-align: left;
   }
 
-
-
   .id-process-text-2 {
   display: flex; 
   flex-direction: column;
-  gap: 1rem; 
   flex: 1;
   }
 
@@ -755,24 +755,27 @@ a:hover {
 }
 
   .see-more--button {
-  text-align: center;
-  text-decoration: none;
-  background:var(--color-500);
-  color: white;
-  border: none;
-  border-radius: 100px;
-  padding: 12px 24px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  box-shadow: var(--modern-box-shadow);
-  transition: all 0.3s ease-in-out;
-  margin-top: 2rem;
-  width: 200px;
+    text-align: center;
+    text-decoration: none;
+    background:var(--color-400);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 12px 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    box-shadow: var(--modern-box-shadow);
+    transition: all 0.3s ease-in-out;
+    margin-top: 2rem;
+    width: 200px;
+    cursor: pointer;
   }
 
   .see-more--button:hover {
-  background: var(--color-100);
+    background: var(--color-100);
+    color: black;
+    cursor: pointer;
   }
 
 
@@ -791,7 +794,7 @@ a:hover {
     .id-process-examples-1-2-container {
     gap: 2rem;
     max-width: none;
-    margin-top: 5rem;
+    margin-top: 1.5rem;
   }
   }
 
@@ -968,7 +971,7 @@ TESTIMONIALS MOBILE
     display:flex; 
     flex-direction: column;
     gap: 1.5rem;
-    margin: 5rem 40px;
+    margin: 0rem 40px;
     min-height: 200px;
 }
 
@@ -1094,7 +1097,7 @@ TESTIMONIALS MOBILE
    position: relative;
     margin-bottom: .5rem;
     max-width: 300px;
-    margin-top: 3rem;
+    margin-top: 5rem;
     text-align: center;
 }
 
@@ -1102,12 +1105,12 @@ TESTIMONIALS MOBILE
       background-color: var(--color-light-pink);
       content: "";
       position: absolute;
-      width:230px;
+      width:215px;
       height: 90%;
-      left: 13%;
+      left: 14%;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-2deg);
+      transform: rotate(-1deg);
   }
 
   hr {
@@ -1117,9 +1120,10 @@ TESTIMONIALS MOBILE
   }
 
   .higlighter-background--testimonials {
-  margin: 3rem auto;
+  margin: 0 auto;
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
+  margin-top: 6rem;
   max-width: 300px;
   text-align: center;
 }
@@ -1128,9 +1132,9 @@ TESTIMONIALS MOBILE
       background-color: var(--color-light-pink);
       content: "";
       position: absolute;
-      width:200px;
+      width:190px;
       height: 90%;
-      left: 17%;
+      left: 18%;
       bottom: 0;
       z-index: -1;
       transform: rotate(-1deg);
@@ -1139,18 +1143,18 @@ TESTIMONIALS MOBILE
   .higlighter-background--ID-Process {
   margin: 0 auto;
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   max-width: 400px;
   text-align: center;
 }
 
   .higlighter-background--ID-Process::before {
-      background-color: var(--color-050);
+      background-color: var(--color-light-pink);
       content: "";
       position: absolute;
-      width:425px;
+      width:415px;
       height: 90%;
-      left: -4%;
+      left: -2%;
       bottom: 0;
       z-index: -1;
       transform: rotate(-1deg);
@@ -1171,7 +1175,7 @@ TESTIMONIALS MOBILE
       left: -0%;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-2deg);
+      transform: rotate(-1deg);
   }
 }
 
@@ -1181,7 +1185,8 @@ TESTIMONIALS MOBILE
        flex-direction: column; 
        background: var(--color-000);
        border-radius: 12px;
-       margin: 3rem auto;
+       margin-top: 1.5rem;
+       margin-bottom: 6rem;
        padding: 70px 70px;
        transition: transform 0.5s ease-in-out;
        display: none; 
