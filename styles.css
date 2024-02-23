@@ -807,82 +807,11 @@ a:hover {
   @media (max-width: 869px) {
     .id-process-examples-1-2-container {
     gap: 2rem;
-    max-width: none;
     margin-top: 1.5rem;
   }
   }
 
-  /* Numbered 123 Gradient Graphic Container */
-.numbered123-gradient-graphic--container {
-  display: flex; 
-  flex-direction: column; 
-  gap: 0rem;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
 
-}
-
-.numbered123-gradient-graphic--box1, .numbered123-gradient-graphic--box2, .numbered123-gradient-graphic--box3, .numbered123-gradient-graphic--box4 {
-  display: flex; 
-  flex-direction: row;
-  gap: 2.5rem;
-  padding: 1.5rem;
-  align-items: center;
-  flex: 1;
-  justify-content: flex-start;
-}
-
-
-.numbered123-gradient-graphic--box1 {
-  background: var(--color-025);
-  border-radius: 12px 12px 0px 0px;
-}
-
-.numbered123-gradient-graphic--box2 {
-  background: var(--color-050);
-}
-
-.numbered123-gradient-graphic--box3 {
-  background: var(--color-100);
-}
-
-.numbered123-gradient-graphic--box4 {
-  background: var(--color-200);
-  border-radius: 0px 0px 12px 12px;
-}
-
-.numbered123-gradient-graphic--number {
-  font-size: 4rem;
-  font-weight: 600;
-  min-width: 50px;
-}
-
-.numbered123-gradient-graphic--header {
-  margin: unset;
-  display: flex;
-}
-
-.numbered123-gradient-graphic--paragraph p {
-  margin: unset;
-}
-
-.numbered123-gradient-graphic--text {
-  display: flex; 
-  flex-direction: column;
-}
-
-.quote--container-large {
-  margin: 0 auto;
-}
-
-.leader_quote_container-1, .leader_quote_container-2, .leader_quote_container-3 {
-display: flex; 
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 0px;
-margin-bottom: 0rem;
-}
 
 /************** 
 TESTIMONIALS 
@@ -985,7 +914,7 @@ TESTIMONIALS MOBILE
     display:flex; 
     flex-direction: column;
     gap: 1.5rem;
-    margin: 0rem 40px;
+   
     min-height: 200px;
 }
 
