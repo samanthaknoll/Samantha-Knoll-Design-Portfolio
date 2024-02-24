@@ -585,17 +585,6 @@ a:hover {
   justify-content: center
 }
 
-.services--container-1 {
-  display: flex; 
-  flex-direction: column; 
-  gap: .5rem;
-  border: 4px solid var(--color-light-pink);
-  border-radius: 12px;
-  padding: 2rem 1rem;
-  width: 380px;
-  transition: all 250ms ease-in-out;
-  
-}
 
 .services--container-icon  {
   text-align: center;
@@ -614,6 +603,17 @@ a:hover {
 .services--container-2 h5 {
   height: 40px;
   text-align: center;
+}
+
+.services--container-1 {
+  display: flex; 
+  flex-direction: column; 
+  gap: .5rem;
+  border: 4px solid var(--color-light-pink);
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  width: 380px;
+  transition: all 250ms ease-in-out;  
 }
 
 .services--container-2 {
@@ -661,24 +661,25 @@ a:hover {
   }
 }
  
-  .id-process-examples-1 {
+  .id-process-examples-1,.id-process-examples-2 {
     display: flex; 
-    flex-direction: row; 
     gap: 3rem;
-    border: 1px solid var(--color-secondary);
     padding: 2rem;
     border-radius: 12px;
-    align-items: center;
+    background: var(--color-light-pink);
+     background-image: linear-gradient(to bottom, rgba(215, 193, 178, .9), rgba(228, 214, 203, .9)), url('https://envato-shoebox-0.imgix.net/993d/e9e7-ab98-4250-8d08-c52e9d3ec4df/6s50Z3VEFVPxbvGu382g4MV4T774VYoBfunoBIyC.jpeg?auto=compress%2Cformat&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&w=700&fit=max&markalign=center%2Cmiddle&markalpha=18&s=a1bfd3ee12e0d046719f0ce0da532eb1');
+    background-size: cover;
+    background-position: 25% 25%;
+    color: black;
+
   }
 
-   .id-process-examples-2 {
-    display: flex; 
-    flex-direction: row-reverse; 
-    gap: 3rem;
-    border: 1px solid var(--color-secondary);
-    padding: 2rem;
-    border-radius: 12px;
-    align-items: center;
+  .id-process-examples-2 {
+    flex-direction: row;
+  }
+   
+  .id-process-examples-1 {
+    flex-direction: row-reverse;
   }
 
 
@@ -733,41 +734,6 @@ a:hover {
     text-align: left;
   }
 
-  @media (max-width: 1200px) {
-    .id-process-examples-1 {
-    flex-direction: column-reverse;
-  }
-
-  .id-process-examples-2 {
-    flex-direction: column-reverse; 
-  }
-
-  .id-process-text-1 {
-  gap: 0rem; 
-  }
-
-  .id-process-text-2 {
-  gap: 0rem; 
-  }
-
-  .id-process-image-1 img {
-    max-width: 80%;
-  }
-
-  .see-more--button {
-  margin-top: 0rem;
-  }
-
-
-  .services--container-1 {
-  width: 90%;
-}
-
-.services--container-2 {
-  width: 90%;
-  }
-}
-
   .see-more--button {
     text-align: center;
     text-decoration: none;
@@ -791,6 +757,41 @@ a:hover {
     color: black;
     cursor: pointer;
   }
+
+  @media (max-width: 1200px) {
+    .id-process-examples-1 {
+    flex-direction: column-reverse;
+  }
+
+  .id-process-examples-2 {
+    flex-direction: column-reverse; 
+  }
+
+  .id-process-text-1 {
+  gap: 0rem; 
+  }
+
+  .id-process-text-2 {
+  gap: 0rem; 
+  }
+
+  .id-process-image-1 img {
+    max-width: 80%;
+  }
+
+  .see-more--button {
+  margin: 0 auto;
+  }
+
+
+  .services--container-1 {
+  width: 90%;
+}
+
+.services--container-2 {
+  width: 90%;
+  }
+}
 
 
 
@@ -823,7 +824,6 @@ TESTIMONIALS
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  min-height: 150px;
 } 
 
 .testimonial_box p {
@@ -866,23 +866,21 @@ TESTIMONIALS MOBILE
   height: unset;
 } 
 
-.testimonial-line {
-    width: 14px; /* Sets the thickness of the line */
-    height: 150px; /* Sets the height of the line */
-}
 
 .testimonial_box p {
   font-size: 16px;
-  line-height: 1.4rem;
+  line-height: 1.3rem;
   text-align: center;
 }
 
 .testimonial-photo img {
-  max-width: 40px;
+  max-width: 45px;
+  margin-top: 1rem;
 }
 
 .testimonial-name-and-company {
   font-size: 12px;
+  line-height: 1.1rem;
 }
 }
 
@@ -1143,7 +1141,7 @@ TESTIMONIALS MOBILE
        display: flex; 
        position: relative;
        flex-direction: column; 
-       background: var(--color-000);
+       background: linear-gradient(to right, #f8f5f2, #e7bdb0);
        border-radius: 12px;
        margin-top: 1.5rem;
        margin-bottom: 6rem;
@@ -1158,7 +1156,7 @@ TESTIMONIALS MOBILE
 
      @media (max-width: 850px) {
 .msa-slide-container {
-  padding: 40px 40px 70px 40px;
+  padding: 40px 40px 40px 40px;
      }
 }
      
@@ -1167,7 +1165,7 @@ TESTIMONIALS MOBILE
         position: relative;
         width: 35px;
        height: 35px;
-       background: var(--color-secondary); 
+       background: var(--color-050); 
        border-radius: 50%;
        cursor: pointer; 
        transition: background-color 0.5s ease-in-out;
