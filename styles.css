@@ -232,7 +232,7 @@ h1, h2, h3, h4 {
   color: var(--color-000);
   background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Adding a semi-transparent black gradient */
-    url('https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/9gp3ybkpz563-arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg');
+    url('https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/2seu1x5x9ef9-arnel-hasanovic-MNd-Rka1o0Q-unsplash1.png');
   background-size: cover;
   background-position: 50% 65%;
   background-repeat: no-repeat;
@@ -318,7 +318,7 @@ h1, h2, h3, h4 {
       left: -5px;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-1deg);
+      transform: rotate(-2deg);
   }
 
   @media (max-width: 1000px) {
@@ -360,6 +360,7 @@ gap: .6rem;
 .homepage-about-me--text h3 {
       position: relative;
       margin-bottom: 1.5rem;
+      
   }
 
  .homepage-about-me--text h3::before {
@@ -372,7 +373,7 @@ gap: .6rem;
       left: -2px;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-1deg);
+      transform: rotate(-2deg);
   }
 
 
@@ -479,18 +480,17 @@ gap: .6rem;
 }
 
 .homepage-about-me--text h3 {
-      margin: 0 auto;
-      width: 150px;
-      margin-top: 3rem;
-      margin-bottom: 2rem;
+      margin: 2rem auto;
+      width: 125px;
+      text-align: center;
+      justify-content: center;
   }
 
  .homepage-about-me--text h3::before {
-      width: 120px;
+      width: 128px;
       height: 90%;
-      left: -3%;
+      left: 0%;
       bottom: 0;
-
   }
 
 .about-me-stats--container {
@@ -530,7 +530,7 @@ gap: .6rem;
 
 footer {
     position: relative;
-    background-image: url('https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/mij4jpdc561k-00023.jpg');
+    background-image: url('https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/cnwhdr7wgfff-00023.png');
     background-size: cover;
     background-position: 25% 25%;
     padding: 40px;
@@ -650,7 +650,7 @@ a:hover {
       left: 0px;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-1deg);
+      transform: rotate(-2deg);
       text-align: center;
   }
 
@@ -663,11 +663,9 @@ a:hover {
  
   .id-process-examples-1,.id-process-examples-2 {
     display: flex; 
-    gap: 3rem;
+    gap: 2rem;
     padding: 2rem;
     border-radius: 12px;
-    background: var(--color-light-pink);
-     background-image: linear-gradient(to bottom, rgba(215, 193, 178, .9), rgba(228, 214, 203, .9)), url('https://envato-shoebox-0.imgix.net/993d/e9e7-ab98-4250-8d08-c52e9d3ec4df/6s50Z3VEFVPxbvGu382g4MV4T774VYoBfunoBIyC.jpeg?auto=compress%2Cformat&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&w=700&fit=max&markalign=center%2Cmiddle&markalpha=18&s=a1bfd3ee12e0d046719f0ce0da532eb1');
     background-size: cover;
     background-position: 25% 25%;
     color: black;
@@ -699,7 +697,7 @@ a:hover {
   .id-process-image-1 img {
     border-radius: 12px;
     width: 100%;
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
   }
 
   .id-process-text-1 h3 {
@@ -734,21 +732,21 @@ a:hover {
     text-align: left;
   }
 
-  .see-more--button {
+.see-more--button {
     text-align: center;
     text-decoration: none;
     background:var(--color-400);
     color: white;
     border: none;
     border-radius: 100px;
-    padding: 12px 24px;
+    padding: 10px 16px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     box-shadow: var(--modern-box-shadow);
     transition: all 0.3s ease-in-out;
-    margin-top: 2rem;
-    width: 200px;
+    margin-top: 1rem;
+    width: 180px;
     cursor: pointer;
   }
 
@@ -780,7 +778,9 @@ a:hover {
   }
 
   .see-more--button {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
   }
 
 
@@ -807,7 +807,7 @@ a:hover {
 
   @media (max-width: 869px) {
     .id-process-examples-1-2-container {
-    gap: 2rem;
+    gap: 2.5rem;
     margin-top: 1.5rem;
   }
   }
@@ -840,9 +840,12 @@ TESTIMONIALS
 }
 
 .testimonial-photo img {
-  max-width: 60px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 1px solid var(--color-000);
+  object-fit: cover;
+  object-position: 50% 100%;
 }
 
 /************** 
@@ -912,14 +915,13 @@ TESTIMONIALS MOBILE
     display:flex; 
     flex-direction: column;
     gap: 1.5rem;
-   
     min-height: 200px;
 }
 
 .pledge-donations-row {
     display: flex; 
     flex-direction: row; 
-    background: var(--color-light-pink);
+    background: var(--color-000);
     border-radius: 12px;
     align-items: stretch;
 }
@@ -937,9 +939,9 @@ TESTIMONIALS MOBILE
             rgba(195, 162, 139, 0.3),
             rgba(195, 162, 139, 0.3)
         ),
-        url('https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/86udlnnye23w-engin-akyurt-bPiuY2ZSlvU-unsplash.jpg');
+        url('https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/5vh5x37qgfqg-jason-goodman-vbxyFxlgpjM-unsplash.png');
     background-size: cover;
-    background-position: center;
+    background-position: center 18%;
     background-repeat: no-repeat;
     border-radius: 12px 0px 0px 12px;
 }
@@ -951,7 +953,7 @@ TESTIMONIALS MOBILE
             rgba(195, 162, 139, 0.3),
             rgba(195, 162, 139, 0.3)
         ),
-        url(https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/5fl5xpwfz7y2-amelia-bartlett-OgT83CPGbQI-unsplash.jpg);
+        url(https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/ktmso6wotyun-amelia-bartlett-OgT83CPGbQI-unsplash1.png);
     background-size: cover;
     background-position: center 30%;
     background-repeat: no-repeat;
@@ -964,7 +966,7 @@ TESTIMONIALS MOBILE
             rgba(195, 162, 139, 0.3),
             rgba(195, 162, 139, 0.3)
         ),
-        url(https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/givxtea12040-mohammad-rahmani-oXlXu2qukGE-unsplash.jpg);
+        url(https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/1z9tewzkh6jn-artem-sapegin-b18TRXc8UPQ-unsplash.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -977,9 +979,9 @@ TESTIMONIALS MOBILE
             rgba(195, 162, 139, 0.3),
             rgba(195, 162, 139, 0.3)
         ),
-        url(https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/flin98kzgfvq-day-meeting-top-view-of-modern-young-people-commu-2023-11-27-05-35-57-utc.jpg);
+        url(https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/imhpxf2v21kz-ux-indonesia-8mikJ83LmSQ-unsplash.png);
     background-size: cover;
-    background-position: center;
+    background-position: center 60%;
     background-repeat: no-repeat;
     border-radius: 12px 0px 0px 12px;
 }
@@ -1051,7 +1053,7 @@ TESTIMONIALS MOBILE
       left: 14%;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-1deg);
+      transform: rotate(-2deg);
   }
 
   @media (max-width: 1000px) {
@@ -1087,7 +1089,7 @@ TESTIMONIALS MOBILE
       left: 18%;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-1deg);
+      transform: rotate(-2deg);
   }
 
   @media (max-width: 1000px) {
@@ -1115,7 +1117,7 @@ TESTIMONIALS MOBILE
       left: -2%;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-1deg);
+      transform: rotate(-2deg);
   }
 
   .linkedin-icon img {
@@ -1126,6 +1128,8 @@ TESTIMONIALS MOBILE
     margin-bottom: 10px;
   }
 
+
+
   @media(max-width: 769px) {
     .higlighter-background--ID-Process::before {
       width:340px;
@@ -1133,7 +1137,7 @@ TESTIMONIALS MOBILE
       left: -0%;
       bottom: 0;
       z-index: -1;
-      transform: rotate(-1deg);
+      transform: rotate(-2deg);
   }
 }
 
@@ -1141,7 +1145,7 @@ TESTIMONIALS MOBILE
        display: flex; 
        position: relative;
        flex-direction: column; 
-       background: linear-gradient(to right, #f8f5f2, #e7bdb0);
+       background:linear-gradient(to bottom, var(--color-000), var(--color-light-pink));
        border-radius: 12px;
        margin-top: 1.5rem;
        margin-bottom: 6rem;
