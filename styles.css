@@ -9,6 +9,7 @@
     --color-500: #bc987e;
     --color-secondary: #e7bdb0;
     --color-light-pink: rgba(231, 189, 176, .3);
+    --light-brown: rgba(195, 162, 139, .1);
     --modern-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --subtle-box-shadow: box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -669,7 +670,7 @@ a:hover {
     background-size: cover;
     background-position: 25% 25%;
     color: black;
-
+    background: var(--light-brown);
   }
 
   .id-process-examples-2 {
@@ -756,6 +757,7 @@ a:hover {
     cursor: pointer;
   }
 
+
   @media (max-width: 1200px) {
     .id-process-examples-1 {
     flex-direction: column-reverse;
@@ -763,6 +765,12 @@ a:hover {
 
   .id-process-examples-2 {
     flex-direction: column-reverse; 
+  }
+
+   .id-process-examples-1,.id-process-examples-2 {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 1rem;
   }
 
   .id-process-text-1 {
@@ -876,8 +884,10 @@ TESTIMONIALS MOBILE
   text-align: center;
 }
 
+
 .testimonial-photo img {
-  max-width: 45px;
+  width: 55px;
+  height: 55px;
   margin-top: 1rem;
 }
 
@@ -998,9 +1008,13 @@ TESTIMONIALS MOBILE
 @media(max-width: 769px) {
    .pledge-donations-container {
     gap: 1.5rem;
-    margin: 0 auto;
-    max-width: 90%;
-    
+    margin: 0 auto; 
+    margin-top: 2rem;
+}
+
+.pledge-donations-container--text { 
+    padding: 1rem;
+
 }
   
   .pledge-donations-row {
@@ -1170,7 +1184,7 @@ TESTIMONIALS MOBILE
         position: relative;
         width: 35px;
        height: 35px;
-       background: var(--color-050); 
+       background: var(--color-100); 
        border-radius: 50%;
        cursor: pointer; 
        transition: background-color 0.5s ease-in-out;
