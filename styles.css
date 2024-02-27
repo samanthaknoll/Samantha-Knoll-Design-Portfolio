@@ -609,7 +609,7 @@ a:hover {
   border-radius: 12px;
   padding: 2rem 1rem;
   width: 350px;
-  height: 489px;
+  height: 490px;
   transition: all 250ms ease-in-out;  
   justify-content: flex-start;
   align-items: center;
@@ -647,6 +647,11 @@ a:hover {
       width: 150px;
       left: -6px;
   }
+
+  .services--container-1 {
+  width: 100%;
+  height: unset;
+}
 }
  
   .id-process-examples-1,.id-process-examples-2 {
