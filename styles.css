@@ -890,6 +890,31 @@ TESTIMONIALS MOBILE
   overflow: hidden; /* Ensures the corners are rounded */
 }
 
+.msa-giving-lectora-interactivity-container {
+    display: flex; 
+    justify-content: center;
+}
+
+.msa-giving-lectora-interactivity-container iframe {
+    border-radius: 12px;
+    min-width: 900px;
+    min-height: 594px;
+}
+
+/* Mobile 784 */
+@media (max-width: 1050px) {
+.msa-giving-lectora-interactivity-container {
+}
+
+.msa-giving-lectora-interactivity-container iframe {
+    min-width: 480px;
+    min-height: 700px;
+}
+}
+
+
+
+
 .certifications--container {
   display: flex; 
   flex-direction: row; 
