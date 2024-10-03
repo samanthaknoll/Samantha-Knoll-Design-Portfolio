@@ -912,6 +912,16 @@ TESTIMONIALS MOBILE
 }
 }
 
+/* Mobile 490 */
+@media (max-width: 490px) {
+.msa-giving-lectora-interactivity-container {
+}
+
+.msa-giving-lectora-interactivity-container iframe {
+   display: none;
+}
+}
+
 
 
 
