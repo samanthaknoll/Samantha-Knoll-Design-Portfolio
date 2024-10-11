@@ -609,7 +609,7 @@ a:hover {
   border-radius: 12px;
   padding: 2rem 1rem;
   width: 350px;
-  height: 490px;
+  height: 508px;
   transition: all 250ms ease-in-out;  
   justify-content: flex-start;
   align-items: center;
@@ -750,7 +750,7 @@ a:hover {
   }
 
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     .id-process-examples-1 {
     flex-direction: column-reverse;
   }
