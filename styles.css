@@ -16,6 +16,9 @@
 
 
 
+.section-spacing { 
+  margin-bottom: 6rem;
+}
 
 .page-container {
   margin-left: 60px;
@@ -169,7 +172,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding-top: 90px;
   line-height: 24px;
 }
 
@@ -232,7 +234,7 @@ h1, h2, h3, h4 {
   background-color: var(--color-050);
   color: var(--color-000);
   background-image: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Adding a semi-transparent black gradient */
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), /* Adding a semi-transparent black gradient */
     url('https://d36ai2hkxl16us.cloudfront.net/course-uploads/ebcec5bf-68a7-4e15-80d6-82675aa33bcc/2seu1x5x9ef9-arnel-hasanovic-MNd-Rka1o0Q-unsplash1.png');
   background-size: cover;
   background-position: 50% 65%;
@@ -243,8 +245,8 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 1rem;
   margin: 0rem;
-  padding: 2rem;
-  min-height: 425px;
+  margin-top: 60px;
+  min-height: 550px;
 }
 
   
@@ -300,8 +302,8 @@ h1, h2, h3, h4 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .homepage-skills--container h3{ 
@@ -330,12 +332,15 @@ h1, h2, h3, h4 {
   }
 }
 
+
 .skill--multiple-container {
 display: flex; 
 justify-content: center;
 flex-direction: row;
 flex-wrap: wrap;
-gap: .6rem;
+gap: 2.5rem;
+margin-top: 3rem;
+margin-bottom: 2rem;
 }
 
 .skill--container {
@@ -343,15 +348,17 @@ gap: .6rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100px;
   border: 2px solid black; 
-  border-radius: 12px;
-  height: 150px;
-  width: 150px;
-  gap: 1rem;
+  border-top: 10px solid black;
+  border-radius: 8px;
+  height: 200px;
+  width: 200px;
+  gap: 1.4rem;
   box-shadow: var(--subtle-box-shadow);
   text-align: center;
 }
+
+
 
 .skill--container img{
   width: 50px;
@@ -619,6 +626,7 @@ a:hover {
   display: flex; 
   flex-direction: column;
   align-items: center;
+  margin-bottom: 8rem;
 }
 
 .what-i-offer{ 
@@ -725,6 +733,12 @@ a:hover {
     text-align: left;
   }
 
+  .id-process-p {
+max-width: 900px;
+text-align: center;
+margin: 0 auto;
+  }
+
 .see-more--button {
     text-align: center;
     text-decoration: none;
@@ -794,6 +808,8 @@ a:hover {
     gap: 3rem;
     margin: 0 auto;
     margin-top: 2rem;
+    margin-bottom: 10rem;
+
   }
 
   @media (max-width: 869px) {
